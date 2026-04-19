@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | Kreethi Embroidery</title>
+  <meta name="description" content="Review your cart, update quantities, and proceed to checkout at Kreethi Embroidery.">
+  <meta name="theme-color" content="#8c2f39">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="cart">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html"><span class="brand-mark">KE</span><span><strong>Kreethi Embroidery</strong><small>Embroidery & Tassel Works</small></span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html" class="active">Cart <span class="cart-count" data-cart-count>0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container cart-layout">
+      <section class="card-panel reveal">
+        <p class="eyebrow">Cart</p>
+        <h1>Your selected items</h1>
+        <div id="cart-items" class="cart-items"></div>
+      </section>
+      <aside class="card-panel accent-panel reveal">
+        <h2>Order summary</h2>
+        <div class="summary-row"><span>Subtotal</span><strong id="cart-subtotal">₹0</strong></div>
+        <div class="summary-row"><span>Shipping</span><strong>₹0</strong></div>
+        <div class="summary-row total"><span>Total</span><strong id="cart-total">₹0</strong></div>
+        <a class="btn btn-primary full-width" href="checkout.html">Proceed to Checkout</a>
+        <a class="btn btn-secondary full-width" href="shop.html">Continue Shopping</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>Kreethi Embroidery</strong><p>Cart values are stored locally in your browser.</p></div>
+      <div><a href="shop.html">Shop</a><a href="checkout.html">Checkout</a><a href="contact.html">Contact</a></div>
+      <div><a href="index.html">Home</a><a href="about.html">About</a><a href="shop.html?category=embroidery">Embroidery</a></div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

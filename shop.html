@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Kreethi Embroidery</title>
+  <meta name="description" content="Browse embroidery designs and tassel works from Kreethi Embroidery. Add items to cart or order instantly on WhatsApp.">
+  <meta name="theme-color" content="#8c2f39">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="shop">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html"><span class="brand-mark">KE</span><span><strong>Kreethi Embroidery</strong><small>Embroidery & Tassel Works</small></span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="page-heading reveal">
+        <p class="eyebrow">Shop</p>
+        <h1>Browse all products</h1>
+        <p class="lead">Filter by category, then add items to cart or place a WhatsApp order in one click.</p>
+      </div>
+
+      <div class="toolbar reveal">
+        <label class="search-wrap" for="product-search">
+          <span class="search-label">Search products</span>
+          <input id="product-search" class="search-input" type="search" placeholder="Search by title or category">
+        </label>
+        <div class="filter-pills" role="tablist" aria-label="Product filters">
+          <button class="pill active" data-filter="all">All</button>
+          <button class="pill" data-filter="allover-blouse">Allover Blouse</button>
+          <button class="pill" data-filter="blouse-neck">Blouse Neck</button>
+          <button class="pill" data-filter="saree-pallus">Saree Pallus</button>
+          <button class="pill" data-filter="boat-neck">Boat Neck</button>
+          <button class="pill" data-filter="cut-work">Cut Work</button>
+          <button class="pill" data-filter="kid-neck">Kid Neck</button>
+          <button class="pill" data-filter="kutch-work">Kutch Work</button>
+          <button class="pill" data-filter="net-designs">Net Designs</button>
+          <button class="pill" data-filter="pot-designs">Pot Designs</button>
+          <button class="pill" data-filter="tassels-works">Tassels Works</button>
+        </div>
+        <div class="toolbar-note">Use the category chips and search bar to find designs quickly.</div>
+      </div>
+
+      <div id="shop-products" class="product-grid"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>Kreethi Embroidery</strong><p>Elegant traditional shopping for embroidery and tassel lovers.</p></div>
+      <div><a href="index.html">Home</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+      <div><a href="cart.html">Cart</a><a href="checkout.html">Checkout</a><a href="shop.html">Shop All</a></div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

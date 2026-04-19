@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Kreethi Embroidery</title>
+  <meta name="description" content="Complete your order with checkout, UPI manual confirmation, or Razorpay test mode payment options.">
+  <meta name="theme-color" content="#8c2f39">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="checkout">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html"><span class="brand-mark">KE</span><span><strong>Kreethi Embroidery</strong><small>Embroidery & Tassel Works</small></span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container checkout-layout">
+      <section class="card-panel reveal">
+        <p class="eyebrow">Checkout</p>
+        <h1>Enter delivery details</h1>
+        <form id="checkout-form" class="checkout-form">
+          <label>
+            Name
+            <input type="text" name="name" required placeholder="Your full name">
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" required placeholder="Mobile number">
+          </label>
+          <label>
+            Address
+            <textarea name="address" rows="4" required placeholder="Complete delivery address"></textarea>
+          </label>
+          <label>
+            Payment Method
+            <select name="payment" id="payment-method">
+              <option value="upi">Pay via UPI / manual confirmation</option>
+              <option value="razorpay">Razorpay test mode</option>
+            </select>
+          </label>
+          <button class="btn btn-primary" type="submit">Place Order</button>
+        </form>
+      </section>
+      <aside class="card-panel accent-panel reveal">
+        <h2>Payment summary</h2>
+        <p>Your order total is calculated from the local cart. For Razorpay test mode, add your test key in `js/script.js`.</p>
+        <div class="summary-row total"><span>Total</span><strong id="checkout-total">₹0</strong></div>
+        <p class="mini-note">UPI/manual confirmation will generate a WhatsApp message for easy follow-up.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>Kreethi Embroidery</strong><p>Responsive checkout with test-friendly payment choices.</p></div>
+      <div><a href="cart.html">Cart</a><a href="shop.html">Shop</a><a href="contact.html">Contact</a></div>
+      <div><a href="index.html">Home</a><a href="about.html">About Us</a><a href="shop.html?category=tassel">Tassels</a></div>
+    </div>
+  </footer>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
